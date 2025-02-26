@@ -54,7 +54,7 @@ namespace FiapOperacoes
 
                 //Encerramento do sistema
 
-                Console.WriteLine("\nDigite qualquer coisa para sair");
+                Console.WriteLine("\nDigite algo para sair");
             }
             catch (Exception ex)
             {

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
@@ -53,6 +54,16 @@ namespace FiapOperacoes
                 Console.WriteLine($"Nenhum número é negativo? {nenhumNegativo}");
 
                 //Encerramento do sistema
+
+                if(Directory.Exists("C:\breno"))
+                {
+                    Console.WriteLine("Pasta existe");
+                }
+                else
+                {
+                    Console.WriteLine("Não existe");
+                    Directory.CreateDirectory(@"C:\arquivosProcessar");
+                }
 
                 Console.WriteLine("\nDigite algo para sair");
             }
